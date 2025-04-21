@@ -1,0 +1,43 @@
+<!-- blog.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog - Physics Blog</title>
+  <link rel="stylesheet" href="/blog/style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Physics Blog</h1>
+      <ul class="nav-links">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about/about.html">About</a></li>
+        <li><a href="/blog/blog.html" class="active">Blog</a></li>
+        <li><a href="/post/post.html">Post</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="blog-posts">
+    <div class="post-form">
+      <h2>Create a New Post</h2>
+      <input type="text" id="new-title" placeholder="Post Title" />
+      <textarea id="new-content" placeholder="Write your post here..."></textarea>
+      <button onclick="addPost()">Add Post</button>
+    </div>
+
+    <div class="post-list">
+      <h2>All Posts</h2>
+      <div id="posts-container"></div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Physics Blog. All rights reserved.</p>
+  </footer>
+
+  <script src="/blog/script.js"></script>
+</body>
+</html>

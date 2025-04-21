@@ -1,0 +1,53 @@
+<!-- post.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create a Post - Physics Blog</title>
+  <link rel="stylesheet" href="/post/style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Physics Blog</h1>
+      <ul class="nav-links">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about/about.html">About</a></li>
+        <li><a href="/blog/blog.html">Blog</a></li>
+        <li><a href="/post/post.html" class="active">Create Post</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="create-post">
+    <div class="form-container">
+      <h2>Create a New Post</h2>
+      <form id="create-post-form">
+        <div class="form-group">
+          <label for="post-title">Title</label>
+          <input type="text" id="post-title" name="title" required placeholder="Enter post title">
+        </div>
+        
+        <div class="form-group">
+          <label for="post-image">Image URL</label>
+          <input type="url" id="post-image" name="image" placeholder="Enter image URL">
+        </div>
+
+        <div class="form-group">
+          <label for="post-content">Content</label>
+          <textarea id="post-content" name="content" rows="8" required placeholder="Write your post content here..."></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Publish Post</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Physics Blog. All rights reserved.</p>
+  </footer>
+
+  <script src="/post/script.js"></script>
+</body>
+</html>
